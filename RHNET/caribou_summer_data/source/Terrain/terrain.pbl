@@ -1,0 +1,9 @@
+class cfg
+{
+PNGfilename="terrain.png";
+squareSize=10.000000;
+originX=0;
+originY=0;
+minHeight=-16;
+maxHeight=284;
+};

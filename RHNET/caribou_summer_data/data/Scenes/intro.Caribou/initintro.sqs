@@ -1,0 +1,163 @@
+;init
+0 fadeSound 0
+titleCut ["", "BLACK FADED", 2];
+~1
+
+showCinemaBorder false
+0 fadeMusic 0.7
+
+~0.01
+
+_camera = "camera" camCreate [3061.12,2875.22,1.28];
+_camera camPrepareTarget [18284.49,-95827.64,4890.24];
+_camera camPrepareFOV 0.400;
+_camera cameraEffect ["internal","back"];
+
+titleCut ["", "BLACK IN", 4];
+_camera camCommitPrepared 0;
+@camCommitted _camera
+
+_camera camPrepareTarget [18284.49,-95827.64,4890.03];
+_camera camPreparePos [3074.11,2867.47,2.60];
+_camera camPrepareFOV 0.400;
+_camera camCommitPrepared 18
+@camCommitted _camera
+
+;scene2a
+_camera camPrepareTarget [92573.18,3965.64,44439.79];
+_camera camPreparePos [2985.98,2496.90,3.59];
+_camera camPrepareFOV 0.605;
+_camera camCommitPrepared 0
+@camCommitted _camera
+
+;scene2b
+_camera camPrepareTarget [89813.16,-32347.70,35359.94];
+_camera camPreparePos [2988.59,2491.64,7.15];
+_camera camPrepareFOV 0.389;
+_camera camCommitPrepared 12
+@camCommitted _camera
+
+;kopteri_ohitus_pumpstation
+_camera camPrepareTarget [-18590.53,95708.95,29039.98];
+_camera camPreparePos [3232.48,2525.26,2.59];
+_camera camPrepareFOV 0.700;
+_camera camCommitPrepared 0
+@camCommitted _camera
+
+;comment "19:43:23";
+_camera camPrepareTarget [28347.68,96675.31,22478.28];
+_camera camPreparePos [3232.39,2527.86,6.10];
+_camera camPrepareFOV 0.366;
+_camera camCommitPrepared 12
+@camCommitted _camera
+
+;kopteri_ohitus_logginroute
+_camera camPrepareTarget [25385.47,-90585.18,26745.62];
+_camera camPreparePos [3362.52,3232.73,1.45];
+_camera camPrepareFOV 0.459;
+_camera camCommitPrepared 0
+@camCommitted _camera
+
+;comment "19:42:10";
+_camera camPrepareTarget [98900.50,-7651.86,27499.63];
+_camera camPreparePos [3362.52,3232.73,1.45];
+_camera camPrepareFOV 0.309;
+_camera camCommitPrepared 8
+@camCommitted _camera
+
+#loop
+
+introsol switchMove "amovpsitmstpsraswrfldnon_smoking";
+
+;smoker
+_camera camPrepareTarget [90551.12,-44898.51,4818.85];
+_camera camPreparePos [2755.95,2737.61,0.79];
+_camera camPrepareFOV 0.610;
+_camera camCommitPrepared 0
+@camCommitted _camera
+
+;comment "20:00:51";
+_camera camPrepareTarget [101075.27,-14882.81,4818.88];
+_camera camPreparePos [2755.76,2737.19,0.79];
+_camera camPrepareFOV 0.450;
+_camera camCommitPrepared 15
+@camCommitted _camera
+
+;comment lav
+_camera camPrepareTarget [-78910.95,-51991.20,18332.07];
+_camera camPreparePos [2726.35,2789.53,2.37];
+_camera camPrepareFOV 0.450;
+_camera camCommitPrepared 0
+
+;comment "20:01:47";
+_camera camPrepareTarget [-74399.47,-58178.80,18331.85];
+_camera camPreparePos [2724.33,2792.46,2.38];
+_camera camPrepareFOV 0.430;
+_camera camCommitPrepared 10
+@camCommitted _camera
+
+;saw
+_camera camPrepareTarget [67470.02,-72003.48,2844.44];
+_camera camPreparePos [2427.96,3902.57,1.11];
+_camera camPrepareFOV 0.316;
+_camera camCommitPrepared 0
+@camCommitted _camera
+
+;comment "20:04:39";
+_camera camPrepareTarget [101935.27,-5598.04,2844.46];
+_camera camPreparePos [2425.75,3892.69,2.05];
+_camera camPrepareFOV 0.244;
+_camera camCommitPrepared 15
+@camCommitted _camera
+
+;saw2
+_camera camPrepareTarget [-88395.56,41859.68,16674.68];
+_camera camPreparePos [2610.04,3891.52,0.78];
+_camera camPrepareFOV 0.244;
+_camera camCommitPrepared 0
+@camCommitted _camera
+
+;comment "20:05:55";
+_camera camPrepareTarget [-65293.29,73372.32,23735.31];
+_camera camPreparePos [2619.17,3893.58,0.78];
+_camera camPrepareFOV 0.347;
+_camera camCommitPrepared 15
+@camCommitted _camera
+
+;chopper
+_camera camPrepareTarget [14421.88,104207.94,-4164.68];
+_camera camPreparePos [3740.31,4870.13,0.81];
+_camera camPrepareFOV 0.347;
+_camera camCommitPrepared 0
+@camCommitted _camera
+
+;comment "20:07:25";
+_camera camPrepareTarget [13147.31,104346.48,-4164.04];
+_camera camPreparePos [3741.37,4876.69,0.83];
+_camera camPrepareFOV 0.331;
+_camera camCommitPrepared 15
+@camCommitted _camera
+
+;airbase
+_camera camPrepareTarget [44888.12,93000.25,8286.64];
+_camera camPreparePos [1622.70,3223.88,7.96];
+_camera camPrepareFOV 0.439;
+_camera camCommitPrepared 0
+@camCommitted _camera
+
+;comment "19:14:17";
+_camera camPrepareTarget [21491.20,100876.48,8283.06];
+_camera camPreparePos [1657.50,3210.37,8.79];
+_camera camPrepareFOV 0.400;
+_camera camCommitPrepared 15
+@camCommitted _camera
+
+
+goto "loop";
+
+;exit
+;player cameraEffect ["terminate","back"]
+;_this switchMove ""
+;camDestroy _camera
+;exit
+

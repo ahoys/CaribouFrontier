@@ -1,0 +1,189 @@
+;init
+0 fadeSound 0
+titleCut ["", "BLACK FADED", 2];
+~1
+
+showCinemaBorder false
+0 fadeMusic 0.7
+
+~0.01
+"colorCorrections" ppEffectAdjust [1, 1, 0, [0.0, 0.8, 0.9, 0.002], [1, 1, 1, 0.5], [1, 1, 0, 0.0]];
+"colorCorrections" ppEffectCommit 0;
+"colorCorrections" ppEffectEnable TRUE;
+
+"filmGrain" ppEffectEnable true; 
+"filmGrain" ppEffectAdjust [0.05, 1, 1, 0.1, 1, false];
+"filmGrain" ppEffectCommit 0; 
+
+"radialBlur" ppEffectEnable false;
+"wetDistortion" ppEffectEnable false;
+"chromAberration" ppEffectEnable false;
+
+_camera = "camera" camCreate [2929.03,2599.60,20.60];
+_camera camPrepareTarget [29477.29,-4244.74,96221.73];
+_camera camPrepareFOV 0.431;
+_camera cameraEffect ["internal","back"];
+
+titleCut ["", "BLACK IN", 4];
+_camera camCommitPrepared 0;
+@camCommitted _camera
+
+_camera camPrepareTarget [95216.27,-33024.87,14666.46];
+_camera camPreparePos [2929.03,2599.60,5.60];
+_camera camPrepareFOV 0.590;
+_camera camCommitPrepared 18
+@camCommitted _camera
+
+;scene2a
+_camera camPrepareTarget [92573.18,3965.64,44439.79];
+_camera camPreparePos [2985.98,2496.90,3.59];
+_camera camPrepareFOV 0.605;
+_camera camCommitPrepared 0
+@camCommitted _camera
+
+;scene2b
+_camera camPrepareTarget [89813.16,-32347.70,35359.94];
+_camera camPreparePos [2988.59,2491.64,7.15];
+_camera camPrepareFOV 0.389;
+_camera camCommitPrepared 12
+@camCommitted _camera
+
+;scene3a
+_camera camPrepareTarget [5993.41,92159.09,44116.59];
+_camera camPreparePos [3183.76,2439.71,0.20];
+_camera camPrepareFOV 0.621;
+_camera camCommitPrepared 0
+@camCommitted _camera
+
+;scene3b
+_camera camPrepareTarget [27152.37,95707.75,26987.47];
+_camera camPreparePos [3184.98,2452.58,5.55];
+_camera camPrepareFOV 0.434;
+_camera camCommitPrepared 10
+@camCommitted _camera
+
+;scene4a
+_camera camPrepareTarget kopu;
+_camera camPreparePos [3650.30,3490.61,20.65];
+_camera camPrepareFOV 0.272;
+_camera camCommitPrepared 0
+@camCommitted _camera
+
+;scene4b
+_camera camPrepareTarget kopu;
+_camera camPreparePos [3672.79,3532.61,17.20];
+_camera camPrepareFOV 0.335;
+_camera camCommitPrepared 20
+@camCommitted _camera
+
+koputuho=1;
+
+;scene5a
+_camera camPrepareTarget [102021.02,3190.17,17456.26];
+_camera camPreparePos [3535.23,3510.03,28.87];
+_camera camPrepareFOV 0.461;
+_camera camCommitPrepared 0
+@camCommitted _camera
+
+;scene5b
+_camera camPrepareTarget [89421.36,53556.41,11021.28];
+_camera camPreparePos [3534.48,3509.64,28.78];
+_camera camPrepareFOV 0.416;
+_camera camCommitPrepared 15
+@camCommitted _camera
+
+;scene6a
+_camera camPrepareTarget [-64030.63,-46925.86,53342.99];
+_camera camPreparePos [3865.38,3618.40,18.07];
+_camera camPrepareFOV 0.545;
+_camera camCommitPrepared 0
+@camCommitted _camera
+
+;scene6b
+_camera camPrepareTarget [-74151.95,-54460.55,-23105.88];
+_camera camPreparePos [3865.38,3618.40,60.36];
+_camera camPrepareFOV 0.439;
+_camera camCommitPrepared 10
+@camCommitted _camera
+
+koputuho2=1;
+
+;scene7a
+_camera camPrepareTarget [6506.75,-40275.84,89900.27];
+_camera camPreparePos [3782.68,3589.39,0.30];
+_camera camPrepareFOV 0.700;
+_camera camCommitPrepared 0
+@camCommitted _camera
+
+;scene7b
+_camera camPrepareTarget [79216.73,22870.04,62789.41];
+_camera camPreparePos [3754.30,3560.07,3.64];
+_camera camPrepareFOV 0.600;
+_camera camCommitPrepared 8
+@camCommitted _camera
+
+
+;scene8a
+_camera camPrepareTarget [-32957.77,-85351.39,22322.11];
+_camera camPreparePos [4502.87,4647.53,1.83];
+_camera camPrepareFOV 0.642;
+_camera camCommitPrepared 0
+@camCommitted _camera
+
+;scene8b
+_camera camPrepareTarget [-31107.22,-87696.90,14658.25];
+_camera camPreparePos [4535.45,4584.84,8.18];
+_camera camPrepareFOV 0.515;
+_camera camCommitPrepared 10
+@camCommitted _camera
+
+uaz=1;
+
+;scene9a
+_camera camPrepareTarget [3883.06,103035.05,13941.05];
+_camera camPreparePos [4424.32,4014.41,2.24];
+_camera camPrepareFOV 0.408;
+_camera camCommitPrepared 0
+@camCommitted _camera
+
+;scene9b
+_camera camPrepareTarget [22013.00,101445.55,13902.19];
+_camera camPreparePos [4409.61,3995.73,1.37];
+_camera camPrepareFOV 0.375;
+_camera camCommitPrepared 10
+@camCommitted _camera
+
+;scene10a
+_camera camPrepareTarget [52745.51,-82515.19,-10152.69];
+_camera camPreparePos [3636.15,3986.18,10.80];
+_camera camPrepareFOV 0.354;
+_camera camCommitPrepared 0
+@camCommitted _camera
+
+;scene10b
+_camera camPrepareTarget [74068.92,-66997.23,893.62];
+_camera camPreparePos [3631.84,3989.22,14.46];
+_camera camPrepareFOV 0.542;
+_camera camCommitPrepared 10
+@camCommitted _camera
+
+;scene11a
+_camera camPrepareTarget [8055.53,101242.92,20599.65];
+_camera camPreparePos [3842.68,3454.03,39.85];
+_camera camPrepareFOV 0.700;
+_camera camCommitPrepared 0
+@camCommitted _camera
+
+;scene11b
+_camera camPrepareTarget [68263.56,77155.70,20600.51];
+_camera camPreparePos [3937.08,3458.26,40.27];
+_camera camPrepareFOV 0.700;
+_camera camCommitPrepared 256
+@camCommitted _camera
+
+;exit
+;player cameraEffect ["terminate","back"]
+;_this switchMove ""
+;camDestroy _camera
+;exit
+
